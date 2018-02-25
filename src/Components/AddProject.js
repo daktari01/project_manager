@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import uuid from 'uuid';
 
 class AddProject extends Component {
@@ -51,5 +52,10 @@ class AddProject extends Component {
     );
   }
 }
+
+AddProject.propTypes = {
+    categories: PropTypes.array,
+    addProject: PropTypes.func 
+  }
 
 export default AddProject;
